@@ -15,14 +15,14 @@ The **Blender AI Script Assistant** is a Blender plugin that uses natural langua
 
 | File | Description |
 |------|-------------|
-| `Blender_ai_plugin.py` | Main plugin that connects to Hugging Face API and queries live LLMs |
-| `Blender_ai_plugin_base.py` | Offline version with fake LLM response for demo or testing purposes |
+| `blender_ai_plugin.py` | Main plugin that connects to Hugging Face API and queries live LLMs |
+| `blender_ai_plugin_base.py` | Offline version with fake LLM response for demo or testing purposes |
 
 ## Installation Instructions
 
 1. Open Blender.
 2. Go to `Edit > Preferences > Add-ons`.
-3. Click `Install...` and select either `Blender_ai_plugin.py` or `Blender_ai_plugin_base.py`.
+3. Click `Install...` and select either `blender_ai_plugin.py` or `blender_ai_plugin_base.py`.
 4. Enable the add-on via the checkbox.
 5. Access the panel via `View3D > Sidebar (N) > BlenderAI`.
 
@@ -31,7 +31,7 @@ The **Blender AI Script Assistant** is a Blender plugin that uses natural langua
 To use the LLM version:
 1. Create a Hugging Face account at https://huggingface.co/join
 2. Generate an API token at https://huggingface.co/settings/tokens
-3. Replace the value of `HF_TOKEN` in `Blender_ai_plugin.py` with your token.
+3. Replace the value of `HF_TOKEN` in `blender_ai_plugin.py` with your token.
 
 Note: Some models like `Mixtral` may require billing enabled.
 
